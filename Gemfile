@@ -4,6 +4,7 @@ gem 'rails', '3.2.0'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
+gem "nifty-generators", :group => :development
 
 group :production do
   gem 'heroku'
@@ -50,3 +51,5 @@ group :test do
   # Pretty printed test output
   gem 'turn', '~> 0.8.3', :require => false
 end
+
+gem "mocha", :group => :test
