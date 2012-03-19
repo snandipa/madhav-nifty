@@ -1,0 +1,9 @@
+one:
+  name: MyString
+  department: MyString
+  rating: 1
+
+two:
+  name: MyString
+  department: MyString
+  rating: 1

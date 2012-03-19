@@ -14,6 +14,11 @@ end
 group :development, :test do
   #gem 'sqlite3'
   gem 'pg'
+  
+end
+
+group :development do
+  gem 'letter_opener'
 end
 
 group :test do
