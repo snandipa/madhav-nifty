@@ -10,7 +10,10 @@ class CoursesController < ApplicationController
   def create
     @course = Course.new(params[:course])
     if @course.save
-      Notifications.welcome.deliver
+      if Rails.env.development?
+        Notifications.welcome.deliver
+      end
+      
       redirect_to courses_url, :notice => "Successfully created course!!"
       
     else
