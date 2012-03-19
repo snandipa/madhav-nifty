@@ -11,7 +11,7 @@ class CoursesController < ApplicationController
     @course = Course.new(params[:course])
     if @course.save
       Notifications.welcome.deliver
-      redirect_to courses_url, :notice => "Successfully created course."
+      redirect_to courses_url, :notice => "Successfully created course!!"
       
     else
       render :action => 'new'
