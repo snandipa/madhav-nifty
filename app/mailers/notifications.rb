@@ -1,5 +1,5 @@
 class Notifications < ActionMailer::Base
-  default from: "from@example.com"
+  default from: "madnand@yahoo.com"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
@@ -9,6 +9,6 @@ class Notifications < ActionMailer::Base
   def welcome
     @greeting = "Hello"
 
-    mail to: "to@example.org"
+    mail to: "mnandipa@gmail.com"
   end
 end
